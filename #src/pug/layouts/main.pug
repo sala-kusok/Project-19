@@ -1,0 +1,28 @@
+include ../mixins/mixins.pug
+
+block variables
+
+doctype html
+html(lang="en")
+  head
+
+    include ../sections/head.pug
+
+  body
+
+    .container
+
+      //- 1 .header
+      include ../sections/header.pug
+
+      main.wrapper
+
+        //- 2 .content
+        .content
+          block content
+
+        //- 3 .sidebar
+        include ../sections/sidebar.pug
+
+      //- 4 .footer
+      include ../sections/footer.pug

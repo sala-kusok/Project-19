@@ -1,0 +1,55 @@
+.element
+  padding-bottom: 40px
+  border-bottom: 1px solid #dde2e7
+
+  .element__title
+    font-size fun-px-to-rem(30px)
+    font-family 'Playfair Display', serif
+    line-height 1.2
+    color #1a1a1a
+    text-align center
+    margin 0 0 25px 0
+
+  .element__date
+    font-size fun-px-to-rem(14px)
+    font-weight 700
+    line-height 1.2
+    color #b0b0b0
+    text-transform uppercase
+    text-align: center
+    margin: 25px 0
+
+  .element__img
+    margin: 35px 0
+
+    img
+      display block
+      width 100%
+      object-fit cover
+
+  .element__text
+    color #1a1a1a
+    line-height 1.75
+    margin: 30px 0
+
+  .element__footer
+    overflow hidden
+
+  .element__button
+    float left
+    @extend $button
+    width 160px
+    line-height: 42px
+    border-radius 8px
+    &::after
+      content ""
+      background: url("../img/angle-double-right.svg") center center no-repeat
+      display inline-block
+      width: 20px
+      height: 15px
+      vertical-align middle
+      margin: -3px 0 0 5px
+
+  .element__icon
+    float right
+    margin-top: 9px

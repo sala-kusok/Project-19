@@ -1,0 +1,55 @@
+link-hover-color = #e84c50
+
+.pagination
+  display block
+  overflow hidden
+
+  .pagination__first, .pagination__last
+    font-size: fun-px-to-rem(14px);
+    font-weight 700
+    line-height 1.2
+    color black
+    text-transform uppercase
+    text-decoration none
+    transition color 0.2s
+    &:hover
+      color link-hover-color
+
+  .pagination__first
+    float: left
+    &::before
+      content ""
+      background: url("../img/angle-double-left-black.svg") center center no-repeat
+      display inline-block
+      width: 20px
+      height: 15px
+      vertical-align middle
+      margin: -3px 5px 0 0
+
+  .pagination__last
+    float: right
+    &::after
+      content ""
+      background: url("../img/angle-double-right-black.svg") center center no-repeat
+      display inline-block
+      width: 20px
+      height: 15px
+      vertical-align middle
+      margin: -3px 0 0 5px
+
+  .pagination__list
+    max-width 170px
+    margin 0 auto
+    text-align center
+    a
+      font-size fun-px-to-rem(14px)
+      font-weight 700
+      line-height 1.2
+      color black
+      text-transform uppercase
+      text-decoration none
+      transition color 0.2s
+      margin: 0 7px
+      &:hover
+        color link-hover-color
+

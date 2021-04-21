@@ -1,0 +1,49 @@
+header__title-color = #1a1a1a
+
+.header
+  border-bottom 1px solid #dde2e7
+  user-select none
+
+  .header__wrapper
+    max-width 1600px
+    padding-top 50px
+    padding-bottom 50px
+    margin 0 auto
+    overflow hidden
+
+  .header__icon
+    float left
+    margin: 12px 0 0 60px
+
+  .header__title
+    text-align center
+    font-size fun-px-to-rem(38px)
+    font-weight: 900;
+    font-family 'Exo 2', sans-serif
+    color header__title-color
+    margin 0
+
+  .header__box
+    float right
+    overflow hidden
+    margin: 4px 60px 0 0
+
+  .header__search
+    float left
+    margin: 3px 40px 0 0
+
+  .header__search-link
+    display block
+
+  .header__search-img
+    display block
+    width: 28px
+    height: 28px
+
+  .header__subscribe-link
+    float right
+    @extend $button
+    width 150px
+    line-height 36px
+    border-radius 18px
+

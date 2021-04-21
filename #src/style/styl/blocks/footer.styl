@@ -1,0 +1,37 @@
+list-item-color = #8e9399
+
+.footer
+  background-color: #dde2e7
+  &::after
+    content "© Copyright 2019. All rights reserved."
+    font-size fun-px-to-rem(14px)
+    line-height 1.2
+    display block
+    background-color #e8ebee
+    color #b7babe
+    text-align center
+    padding: 20px 0
+
+  .footer__wrapper
+    overflow hidden
+
+  .footer__menu
+    float left
+    list-style none
+    padding 0
+    margin: 55px 0 70px 0
+    columns 175px 3
+    column-gap 110px
+
+  .footer__menu-item
+    font-weight 500
+    line-height 1.2
+    margin: 0 0 15px 0
+
+  .footer__menu-link
+    color list-item-color
+    text-decoration: none
+
+  .footer__icon
+    float right
+    margin: 50px 140px 0 0

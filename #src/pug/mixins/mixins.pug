@@ -1,0 +1,45 @@
+//- 1
+mixin widget__title(title)
+  h2.widget__title #{title}
+
+//- 2
+mixin widget__element(title,date,img)
+  .widget__element
+    .widget__element-img
+      img(src="img/img-" + img + ".jpg" alt="Картинка")
+    h3.widget__element-title #{title}
+    p.widget__element-date #{date}
+
+//- 3
+mixin element(title,date,img,text)
+  .element&attributes(attributes)
+    h2.element__title #{title}
+    p.element__date #{date}
+    .element__img
+      img(src="img/" + img + ".jpg" alt="Картинка")
+    p.element__text #{text}
+    .element__footer
+      a(href="#").element__button read more
+      .element__icon.icon
+        a(href="#" aria-label="Ватцап").icon__link
+          svg.icon__img
+            use(xlink:href="img/symbol/sprite.svg#whatsapp")
+        a(href="#" aria-label="Инстаграм").icon__link
+          svg.icon__img
+            use(xlink:href="img/symbol/sprite.svg#instagram")
+        a(href="#" aria-label="Твитор").icon__link
+          svg.icon__img
+            use(xlink:href="img/symbol/sprite.svg#twitter")
+        a(href="#" aria-label="Фейсбук").icon__link
+          svg.icon__img
+            use(xlink:href="img/symbol/sprite.svg#facebook-f")
+
+//- 4
+mixin pagination()
+  span.pagination&attributes(attributes)
+    a(href="#").pagination__first new posts
+    a(href="#").pagination__last older posts
+    .pagination__list
+      a(href="#") 1
+      a(href="#") 2
+      a(href="#") 3
